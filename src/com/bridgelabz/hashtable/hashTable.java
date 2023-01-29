@@ -3,12 +3,12 @@ import java.util.*;
 
 public class hashTable {
 
-	void word_frequency(String str, String st)
+	void word_frequency(String str1)
     {
         
 		Map<String,Integer> m = new HashMap<>();
  
-        String array[] = str.split(" ");
+        String array[] = str1.split(" ");
  
         for(int i = 0; i < array.length; i++)
         {
@@ -21,21 +21,27 @@ public class hashTable {
             {
                 m.put(array[i],1);
             }
+            
         }
         
         for(Map.Entry<String,Integer> entry: m.entrySet())
         {
-            System.out.println(entry.getKey() + " is " + entry.getValue() + " time ");
+            System.out.println(entry.getKey()  + " is " + entry.getValue() + " time ");
+        
         }
+    
     }
 
 	
     public static void main(String[] args) {
         
     	hashTable table = new hashTable();
-    	String str = "To be or not to be";
-    	String st = "Namrata namrata";
     	
-        table.word_frequency(str, st);
+    	String str = "To be or not to be";
+    	String str1 = "Paranoids are not paranoid because they are paranoid but because they keep putting themselves deliberately into paranoid avoidable situations";
+    	
+        table.word_frequency(str1);
+        
     }
+
 }
