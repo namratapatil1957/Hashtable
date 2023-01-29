@@ -26,10 +26,27 @@ public class hashTable {
         
         for(Map.Entry<String,Integer> entry: m.entrySet())
         {
-            System.out.println(entry.getKey()  + " is " + entry.getValue() + " time ");
+            System.out.println( entry.getKey()  + " is " + entry.getValue() + " time ");
         
         }
-    
+        System.out.println(" \n ");
+        
+        for (int j = 0; j < array.length; j++) 
+        {
+            if (m.containsKey("avoidable")) 
+            {
+                m.remove("avoidable");
+            }
+
+        }
+        System.out.println(" After removing: \n");
+        for(Map.Entry<String,Integer> entry: m.entrySet())
+        {
+            System.out.println( entry.getKey()  + " is " + entry.getValue() + " time ");
+        
+        }
+        
+        
     }
 
 	
