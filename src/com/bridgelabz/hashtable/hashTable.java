@@ -5,10 +5,8 @@ public class hashTable {
 
 
 	void word_frequency(String str)
-
-    {
-        
-		Map<String,Integer> m = new HashMap<>();
+    {	
+	Map<String,Integer> m = new HashMap<>();
  
         String array[] = str1.split(" ");
  
@@ -26,22 +24,6 @@ public class hashTable {
             
         }
         
-        for(Map.Entry<String,Integer> entry: m.entrySet())
-        {
-            System.out.println( entry.getKey()  + " is " + entry.getValue() + " time ");
-        
-        }
-        System.out.println(" \n ");
-        
-        for (int j = 0; j < array.length; j++) 
-        {
-            if (m.containsKey("avoidable")) 
-            {
-                m.remove("avoidable");
-            }
-
-        }
-        System.out.println(" After removing: \n");
         for(Map.Entry<String,Integer> entry: m.entrySet())
         {
             System.out.println( entry.getKey()  + " is " + entry.getValue() + " time ");
