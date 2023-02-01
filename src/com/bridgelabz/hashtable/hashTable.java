@@ -6,7 +6,7 @@ public class hashTable {
 	void word_frequency(String str1)
     {
         
-		Map<String,Integer> m = new HashMap<>();
+	Map<String,Integer> m = new HashMap<>();
  
         String array[] = str1.split(" ");
  
