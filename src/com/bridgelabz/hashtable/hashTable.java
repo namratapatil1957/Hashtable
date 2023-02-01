@@ -3,7 +3,7 @@ import java.util.*;
 
 public class hashTable {
 
-	void word_frequency(String str, String st)
+	void word_frequency(String str)
     {
         
 		Map<String,Integer> m = new HashMap<>();
@@ -34,8 +34,7 @@ public class hashTable {
         
     	hashTable table = new hashTable();
     	String str = "To be or not to be";
-    	String st = "Namrata namrata";
     	
-        table.word_frequency(str, st);
+        table.word_frequency(str);
     }
 }
