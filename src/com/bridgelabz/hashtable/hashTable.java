@@ -3,10 +3,16 @@ import java.util.*;
 
 public class hashTable {
 
+
+
+	void word_frequency(String str)
+    {	
+
 	void word_frequency(String str1)
     {
         
-		Map<String,Integer> m = new HashMap<>();
+
+	Map<String,Integer> m = new HashMap<>();
  
         String array[] = str1.split(" ");
  
@@ -29,6 +35,9 @@ public class hashTable {
             System.out.println( entry.getKey()  + " is " + entry.getValue() + " time ");
         
         }
+
+         
+
         System.out.println(" \n ");
         
         for (int j = 0; j < array.length; j++) 
@@ -47,6 +56,7 @@ public class hashTable {
         }
         
         
+
     }
 
 	
