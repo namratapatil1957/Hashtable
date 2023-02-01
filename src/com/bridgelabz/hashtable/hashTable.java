@@ -3,9 +3,7 @@ import java.util.*;
 
 public class hashTable {
 
-
-	void word_frequency(String str)
-
+	void word_frequency(String str1)
     {
         
 		Map<String,Integer> m = new HashMap<>();
@@ -47,7 +45,8 @@ public class hashTable {
             System.out.println( entry.getKey()  + " is " + entry.getValue() + " time ");
         
         }
-         
+        
+        
     }
 
 	
@@ -56,9 +55,10 @@ public class hashTable {
     	hashTable table = new hashTable();
     	
     	String str = "To be or not to be";
-
+    	String str1 = "Paranoids are not paranoid because they are paranoid but because they keep putting themselves deliberately into paranoid avoidable situations";
     	
-        table.word_frequency(str);
+        table.word_frequency(str1);
+        
     }
 
 }
